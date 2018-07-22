@@ -50,7 +50,7 @@
                         <span class="hamburger-inner"></span>
                      </span>
                     </button>
-                    <a href=""><img src="img/logo.jpg"/></a>
+                    <a href="index.html"><img src="img/logo.jpg"/></a>
                 </div>
 
                 <div class="" id="navbarSupportedContent">
@@ -59,6 +59,7 @@
                             <a class="nav-link dropdown-toggle" id="products-link" href="#" role="button"
                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef1">PRODUCTS</a>
                             <div class="dropdown-menu custom-dropdown" aria-labelledby="products-link">
+                                <a class="dropdown-item" href="products.html">В раздел</a>
                                 <a class="dropdown-item" href="#">L3C</a>
                                 <a class="dropdown-item" href="#">L12C</a>
                                 <a class="dropdown-item" href="#">L17C</a>
@@ -179,9 +180,9 @@
 
     </div>
 
-    <div class="container main">
-        <h1>Name of product</h1>
-        <section class="sliders text-center">
+    <div class="container main selected-product-container">
+        <h1 class="text-center">Name of product</h1>
+        <section class="product-slider text-center">
             <div class="slider1">
                 <h1>Uncompromissing imaging<br>for material science</h1>
                 <button class="sl-button">12C</button>
@@ -196,7 +197,7 @@
             </div>
             -
         </section>
-        
+
     </div>
 
 </div>
@@ -240,7 +241,7 @@
 </script>
 <script>
     $(document).ready(function () {
-        $('.sliders').slick({
+        $('.product-slider').slick({
             arrows: false,
             autoplay: true,
             infinite: true,
