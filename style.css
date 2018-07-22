@@ -127,6 +127,16 @@ a.article:hover {
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */
+.dropdown-toggle::after {
+    display: none !important;
+}
+/*----------------------------------------------
+
+-----------------------------------------------*/
+#navbarSupportedContent2 ul li a {
+    text-transform: uppercase;
+}
+
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     background-color: #1c80e8;
 }
@@ -160,6 +170,7 @@ a.article:hover {
     top: 0;
     right: 0;
 }
+
 
 #content.active {
     width: 100%;
@@ -338,6 +349,51 @@ h1 {
     justify-content: space-around;
     margin: 0 auto;
 }
+
+/*----------------------------------------------
+PRODUCTS PAGE
+ ----------------------------------------------*/
+.products-list {
+    display: flex;
+    justify-content: center;
+}
+
+.products-item {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------
+PRODUCTS PAGE
+ ----------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
