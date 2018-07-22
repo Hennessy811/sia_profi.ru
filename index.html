@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Collapsible sidebar</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <!--Slick-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>-->
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script src="WOW-1.1.0/dist/wow.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#scrollSpyer" data-offset="0">
+
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <h3>SIA</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+            <p>Heading</p>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+
+        <ul class="list-unstyled CTAs">
+            <li>
+                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Free trial</a>
+            </li>
+            <li>
+                <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Buy</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="scrollSpyer">
+            <div class="container-fluid">
+                <div class="logo-hamburger">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="products-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef1">Products</a>
+                            <div class="dropdown-menu custom-dropdown" aria-labelledby="products-link">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="service-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef2">Services</a>
+                            <div class="dropdown-menu custom-dropdown" aria-labelledby="service-link">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" id="instrumentation-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef3">Instrumentation</a>
+                            <div class="dropdown-menu custom-dropdown" aria-labelledby="instrumentation-link">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="right-side-nav" id="navbarSupportedContent2">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Free trial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Buy</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </nav>
+
+        <section class="sliders text-center">
+            <div class="slider1">
+                <h1>Uncompromissing imaging<br>for material science</h1>
+                <button class="sl-button">12C</button>
+            </div>
+            <div class="slider2"></div>
+            <div class="slider3"></div>-
+        </section>
+
+        <div class="container main">
+    
+
+
+            <section class="blocks">
+                <div class="">
+                    <h2 class="moto">Any application. Any budget.</h2>
+                    <p class="thesis">For over a decade. Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Consequatur quos laboriosam illum earum, ratione possimus, fugit vero esse! Aliquam, dolorem.</p>
+                    <p class="last_thesis">Afforable instrumentation. No compromises.</p>
+
+                    <div class="cards">
+                        <div class="card-item">
+                           <img src="img/quality.png" alt="">
+                           <h5>Quality</h5>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, impedit.</p>
+                        </div>
+                        <div class="card-item">
+                            <img src="img/insurance.png">
+                            <h5>Guarantee</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, impedit.</p>
+                        </div>
+                        <div class="card-item">
+                            <img src="img/line.png">
+                            <h5>Development</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, impedit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+       <footer>
+            <div class="footer">
+                <p>SIA © 2018<br>All trademarks or registered trademarks are property of their respective owners</p>
+            </div>
+       </footer>
+    </div>
+
+</div>
+
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!--Slick-->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<!--<script type="text/javascript" src="cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>-->
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
+        });
+
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar, #content').toggleClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $('.sliders').slick({
+            arrows: false,
+            autoplay: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    });
+</script>
+
+<script>
+    new WOW().init();
+</script>
+</body>
+
+</html>
