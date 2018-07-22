@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Collapsible sidebar</title>
+    <title>SIA</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -34,28 +34,18 @@
     <!-- Sidebar  -->
     <nav id="sidebar">
         <div class="sidebar-header">
-            <h3>SIA</h3>
+           <form action="" class="search-form">
+                <div class="form-group has-feedback">
+                  <label for="search" class="sr-only">Search</label>
+                    <input type="text" class="form-control" name="SEARCH" id="search" placeholder="search"/>
+                    <span class="glyphicon glyphicon-search form-control-feedback"/>
+                </div>
+            </form>
         </div>
 
         <ul class="list-unstyled components">
-            <p>Heading</p>
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
+            
+                 
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
                 <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -70,20 +60,49 @@
                     </li>
                 </ul>
             </li>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Gallery</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                </ul>
+            </li>
+            
             <li>
-                <a href="#">Portfolio</a>
+                <a href="#">About</a>
             </li>
             <li>
                 <a href="#">Contact</a>
+            </li>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">FAQ</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">FAQ 1</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ 2</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ 3</a>
+                    </li>
+                </ul>
             </li>
         </ul>
 
         <ul class="list-unstyled CTAs">
             <li>
-                <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Free trial</a>
+                <a href="#" class="download">Free trial</a>
             </li>
             <li>
-                <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Buy</a>
+                <a href="#" class="article">BUY</a>
             </li>
         </ul>
     </nav>
@@ -99,33 +118,37 @@
                     </button>
                 </div>
 
+                <div class="logo">
+                    <a href=""><img src="img/logo.jpg" height="62" width="100"/></a>
+                </div>
+
                 <div class="" id="navbarSupportedContent">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" id="products-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef1">Products</a>
+                            <a class="nav-link dropdown-toggle" id="products-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef1">PRODUCTS</a>
                             <div class="dropdown-menu custom-dropdown" aria-labelledby="products-link">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">L3C</a>
+                                <a class="dropdown-item" href="#">L12C</a>
+                                <a class="dropdown-item" href="#">L17C</a>
+                                <a class="dropdown-item" href="#">8C</a>
+                                <a class="dropdown-item" href="#">12C</a>
+                                <a class="dropdown-item" href="#">16C</a>                             
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" id="service-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef2">Services</a>
+                            <a class="nav-link dropdown-toggle" id="service-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef2">SERVICE</a>
                             <div class="dropdown-menu custom-dropdown" aria-labelledby="service-link">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">MAINTAINCE</a>
+                                <a class="dropdown-item" href="#">SUPPORT</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" id="instrumentation-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef3">Instrumentation</a>
+                            <a class="nav-link dropdown-toggle" id="instrumentation-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#scrollRef3">INSTRUMENTATION</a>
                             <div class="dropdown-menu custom-dropdown" aria-labelledby="instrumentation-link">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">TEMs</a>
+                                <a class="dropdown-item" href="#">PHILIPS/FEI SAMPLE HOLDERS</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">JEOL SAMPLE HOLDER</a>
                             </div>
                         </li>
                     </ul>
@@ -133,9 +156,6 @@
 
                 <div class="right-side-nav" id="navbarSupportedContent2">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Free trial</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Buy</a>
                         </li>
@@ -226,7 +246,7 @@
             arrows: false,
             autoplay: true,
             infinite: true,
-            speed: 500,
+            speed: 100,
             fade: true,
             cssEase: 'linear'
         });
